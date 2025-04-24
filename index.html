@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJ Interior - Premium Interior Products Showroom</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+        .logo-text {
+            height: 55px;
+            width: auto;
+            margin-left: 15px;
+        }
+        .testimonial-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+        }
+        .testimonial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block;
+            background-color: #f8f9fa;
+        }
+        .testimonial-header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .testimonial-info {
+            text-align: center;
+        }
+        .testimonial-content {
+            text-align: center;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 45px;
+            }
+            .logo-text {
+                height: 40px;
+            }
+            .testimonial-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="LOGO_.png" alt="RAJ Interior Logo" class="logo-img">
+                <img src="LOGO_FONT.png" alt="RAJ Interior" class="logo-text">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero-text">
+                            <h1 class="display-3 fw-bold">Transform Your Space with Exclusive & Customizable Interior Products</h1>
+                            <p class="lead">RAJ Interior offers a premium collection of wall art, wallpapers, lighting solutions, flooring, carpets, panels, curtains, blinds, and artificial grass – all with unmatched customization.</p>
+                            <div class="hero-buttons">
+                                <a href="#products" class="btn btn-primary">Explore Our Collection</a>
+                                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <div class="transformation-slider">
+                                <img src="images/before.jpg" alt="Plain room before transformation" class="before-image" loading="lazy">
+                                <img src="images/after.jpg" alt="Room transformed with RAJ Interior products" class="after-image" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="collections-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Our Products</span>
+                <h2 class="section-title">Our Signature Interior Products</h2>
+            </div>
+            <div class="product-filters mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="filter-buttons text-center">
+                            <button class="filter-btn active" data-filter="all">All Products</button>
+                            <button class="filter-btn" data-filter="wall-art">Wall Art</button>
+                            <button class="filter-btn" data-filter="wallpaper">Wallpaper</button>
+                            <button class="filter-btn" data-filter="lighting">Lighting</button>
+                            <button class="filter-btn" data-filter="flooring">Flooring</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 product-item" data-category="wall-art">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/wall-art.jpg" alt="Premium wall art collection" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Wall Art</h3>
+                                <p>Customizable designs in various materials and sizes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/wallpaper.jpg" alt="Luxury wallpaper collection" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Wallpaper</h3>
+                                <p>Exclusive textures, prints, and custom patterns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/lighting.jpg" alt="Premium lighting solutions" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Lighting Solutions</h3>
+                                <p>Modern and elegant lighting options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/flooring.jpg" alt="Luxury flooring and carpets" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Flooring & Carpets</h3>
+                                <p>Premium wood, vinyl, marble, and carpets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/panels.jpg" alt="Decorative wall panels" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Panels</h3>
+                                <p>Decorative and functional wall panels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="images/curtains.jpg" alt="Luxury curtains and blinds" loading="lazy">
+                            <div class="collection-overlay">
+                                <h3>Curtains & Blinds</h3>
+                                <p>Luxury window treatments and solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Customization</span>
+                <h2 class="section-title">Personalize Your Space</h2>
+            </div>
+            <div class="customization-grid">
+                <div class="customization-left">
+                    <div class="customization-item">
+                        <i class="fas fa-image"></i>
+                        <div class="customization-content">
+                            <h3>Custom Image Printing</h3>
+                            <p>Transform any image into stunning wall art on your preferred material</p>
+                        </div>
+                    </div>
+                    <div class="customization-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <div class="customization-content">
+                            <h3>Custom Sizing</h3>
+                            <p>Get products in any size to perfectly fit your space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="customization-right">
+                    <div class="customization-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="customization-content">
+                            <h3>Material Selection</h3>
+                            <p>Choose from a wide range of premium materials</p>
+                        </div>
+                    </div>
+                    <div class="customization-item">
+                        <i class="fas fa-palette"></i>
+                        <div class="customization-content">
+                            <h3>Color Customization</h3>
+                            <p>Customize colors to match your interior theme</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary">Start Customizing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">Your Premium Interior Destination</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-main">
+                    <div class="about-intro">
+                        <h3>About RAJ Interior</h3>
+                        <p class="lead">RAJ Interior is a premium interior showroom offering high-quality and customizable interior products. Our exclusive collection is not available in any other showroom in the city. We collaborate directly with top brands to bring the latest and most unique designs.</p>
+                    </div>
+                    <div class="about-philosophy">
+                        <h3>Our Philosophy</h3>
+                        <p>We believe in personalized interiors, where every space reflects the personality of its owner. Our focus is on quality, uniqueness, and customer satisfaction.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Exclusive Collection</h4>
+                        <p>Products you won't find in any other showroom</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>Unmatched Customization</h4>
+                        <p>Customize any design in any size and material</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Premium Quality</h4>
+                        <p>High-end materials with superior durability</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Trendsetting Designs</h4>
+                        <p>Stay ahead with the latest interior trends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-image">
+                            <img src="images/testimonials/jaydeep.jpg" alt="Jaydeep Solanki - Homeowner" loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Jaydeep Solanki</h4>
+                            <span>Homeowner</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"RAJ Interior transformed my home into a haven of elegance and comfort. Their attention to detail and commitment to quality are unmatched."</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-image">
+                            <img src="images/testimonials/bhavika.jpg" alt="Hiren Thakkar - Interior Designer" loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Hiren Thakkar</h4>
+                            <span>Interior Designer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"RAJ Interior made interiors easy. Their collection of custom flooring, lights, and decor panels gave me endless choices — all under one roof, and all premium"</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-image">
+                            <img src="images/testimonials/mehul.jpg" alt="Mehul Joshi - Commercial Client" loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Mehul Joshi</h4>
+                            <span>Commercial Client</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"RAJ Interior's products have elevated the look and feel of our commercial spaces. Their attention to detail and customer service are top-notch."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Visit our showroom or contact us for personalized assistance</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h3>Visit Our Showroom</h3>
+                            <p>Jail Road, J.B. Complex, 1st Floor,<br>Above Chirag Auto Adviser,<br>Gondal, Gujarat</p>
+                            <p class="hours">Showroom Hours:<br>Monday - Saturday: 10:00 AM - 8:00 PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+91 787878 1052</p>
+                            <a href="tel:+917878781052" class="btn btn-primary">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>rajinteriorsofficial@gmail.com</p>
+                            <a href="mailto:rajinteriorsofficial@gmail.com" class="btn btn-primary">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formspree.io/f/xeogqlbd" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="category" required style="color: #333; background-color: #f8f9fa;">
+                                <option value="" style="color: #666;">Select Product Category</option>
+                                <option value="wall-art" style="color: #333;">Wall Art</option>
+                                <option value="wallpaper" style="color: #333;">Wallpaper</option>
+                                <option value="lighting" style="color: #333;">Lighting</option>
+                                <option value="flooring" style="color: #333;">Flooring & Carpets</option>
+                                <option value="panels" style="color: #333;">Panels</option>
+                                <option value="curtains" style="color: #333;">Curtains & Blinds</option>
+                                <option value="grass" style="color: #333;">Artificial Grass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8!3d19.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAwJzAwLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <span class="brand-text">RAJ</span>
+                        <span class="brand-subtitle">INTERIOR</span>
+                    </div>
+                    <p>Your destination for exclusive interior products and premium customization solutions.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="https://wa.me/919876543210" class="whatsapp-button" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RAJ Interior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
